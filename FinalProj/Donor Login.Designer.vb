@@ -23,7 +23,6 @@ Partial Class frmDonorLogin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.btnGuest = New System.Windows.Forms.Button()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -32,21 +31,12 @@ Partial Class frmDonorLogin
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(112, 69)
+        Me.btnLogin.Location = New System.Drawing.Point(14, 69)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(82, 23)
+        Me.btnLogin.Size = New System.Drawing.Size(180, 23)
         Me.btnLogin.TabIndex = 23
         Me.btnLogin.Text = "Log in"
         Me.btnLogin.UseVisualStyleBackColor = True
-        '
-        'btnGuest
-        '
-        Me.btnGuest.Location = New System.Drawing.Point(14, 69)
-        Me.btnGuest.Name = "btnGuest"
-        Me.btnGuest.Size = New System.Drawing.Size(92, 23)
-        Me.btnGuest.TabIndex = 22
-        Me.btnGuest.Text = "Guest Login"
-        Me.btnGuest.UseVisualStyleBackColor = True
         '
         'txtPassword
         '
@@ -86,7 +76,6 @@ Partial Class frmDonorLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(212, 106)
         Me.Controls.Add(Me.btnLogin)
-        Me.Controls.Add(Me.btnGuest)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Label2)
@@ -99,7 +88,6 @@ Partial Class frmDonorLogin
     End Sub
 
     Friend WithEvents btnLogin As Button
-    Friend WithEvents btnGuest As Button
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents Label2 As Label

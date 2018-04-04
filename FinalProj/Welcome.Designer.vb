@@ -28,22 +28,23 @@ Partial Class frmWelcome
         Me.radDonor = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnGuest = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(267, 103)
+        Me.btnLogin.Location = New System.Drawing.Point(194, 105)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(171, 23)
+        Me.btnLogin.Size = New System.Drawing.Size(154, 23)
         Me.btnLogin.TabIndex = 11
         Me.btnLogin.Text = "Log In"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
         'btnNewAccount
         '
-        Me.btnNewAccount.Location = New System.Drawing.Point(65, 103)
+        Me.btnNewAccount.Location = New System.Drawing.Point(374, 105)
         Me.btnNewAccount.Name = "btnNewAccount"
-        Me.btnNewAccount.Size = New System.Drawing.Size(171, 23)
+        Me.btnNewAccount.Size = New System.Drawing.Size(154, 23)
         Me.btnNewAccount.TabIndex = 10
         Me.btnNewAccount.Text = "Create New Account"
         Me.btnNewAccount.UseVisualStyleBackColor = True
@@ -51,7 +52,7 @@ Partial Class frmWelcome
         'radOrganization
         '
         Me.radOrganization.AutoSize = True
-        Me.radOrganization.Location = New System.Drawing.Point(267, 74)
+        Me.radOrganization.Location = New System.Drawing.Point(273, 73)
         Me.radOrganization.Name = "radOrganization"
         Me.radOrganization.Size = New System.Drawing.Size(84, 17)
         Me.radOrganization.TabIndex = 9
@@ -62,7 +63,7 @@ Partial Class frmWelcome
         'radDonor
         '
         Me.radDonor.AutoSize = True
-        Me.radDonor.Location = New System.Drawing.Point(182, 74)
+        Me.radDonor.Location = New System.Drawing.Point(184, 73)
         Me.radDonor.Name = "radDonor"
         Me.radDonor.Size = New System.Drawing.Size(54, 17)
         Me.radDonor.TabIndex = 8
@@ -90,11 +91,21 @@ Partial Class frmWelcome
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Periwinkle Electronic Access for Community Equality"
         '
+        'btnGuest
+        '
+        Me.btnGuest.Location = New System.Drawing.Point(12, 105)
+        Me.btnGuest.Name = "btnGuest"
+        Me.btnGuest.Size = New System.Drawing.Size(154, 23)
+        Me.btnGuest.TabIndex = 23
+        Me.btnGuest.Text = "Continue as Guest"
+        Me.btnGuest.UseVisualStyleBackColor = True
+        '
         'frmWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(540, 140)
+        Me.Controls.Add(Me.btnGuest)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.btnNewAccount)
         Me.Controls.Add(Me.radOrganization)
@@ -114,4 +125,5 @@ Partial Class frmWelcome
     Friend WithEvents radDonor As RadioButton
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnGuest As Button
 End Class

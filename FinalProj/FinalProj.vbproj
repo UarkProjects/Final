@@ -91,6 +91,18 @@
     <Compile Include="Donor Portal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Donor Profile.Designer.vb">
+      <DependentUpon>Donor Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Donor Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make a Difference.Designer.vb">
+      <DependentUpon>Make a Difference.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Make a Difference.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -105,6 +117,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="New Donor.Designer.vb">
+      <DependentUpon>New Donor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Donor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Organization.Designer.vb">
+      <DependentUpon>New Organization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Organization.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Organization Login.Designer.vb">
       <DependentUpon>Organization Login.vb</DependentUpon>
@@ -141,11 +165,23 @@
     <EmbeddedResource Include="Donor Portal.resx">
       <DependentUpon>Donor Portal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Donor Profile.resx">
+      <DependentUpon>Donor Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Make a Difference.resx">
+      <DependentUpon>Make a Difference.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Donor.resx">
+      <DependentUpon>New Donor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Organization.resx">
+      <DependentUpon>New Organization.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Organization Login.resx">
       <DependentUpon>Organization Login.vb</DependentUpon>
