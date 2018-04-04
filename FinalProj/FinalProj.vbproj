@@ -73,11 +73,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="db.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="DonationHistory.Designer.vb">
+      <DependentUpon>DonationHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DonationHistory.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="DonorPortal.Designer.vb">
+      <DependentUpon>DonorPortal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DonorPortal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonerLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonerLogin.Designer.vb">
+      <DependentUpon>DonerLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -95,13 +107,58 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OrganizationLogin.Designer.vb">
+      <DependentUpon>OrganizationLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizationPortal.Designer.vb">
+      <DependentUpon>OrganizationPortal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationPortal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceHistory.Designer.vb">
+      <DependentUpon>ServiceHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DonationHistory.resx">
+      <DependentUpon>DonationHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorPortal.resx">
+      <DependentUpon>DonorPortal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonerLogin.resx">
+      <DependentUpon>DonerLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizationLogin.resx">
+      <DependentUpon>OrganizationLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizationPortal.resx">
+      <DependentUpon>OrganizationPortal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceHistory.resx">
+      <DependentUpon>ServiceHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
