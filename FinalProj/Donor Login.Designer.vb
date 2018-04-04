@@ -32,59 +32,59 @@ Partial Class frmDonorLogin
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(110, 68)
+        Me.btnLogin.Location = New System.Drawing.Point(112, 69)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(82, 23)
-        Me.btnLogin.TabIndex = 17
+        Me.btnLogin.TabIndex = 23
         Me.btnLogin.Text = "Log in"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
         'btnGuest
         '
-        Me.btnGuest.Location = New System.Drawing.Point(12, 68)
+        Me.btnGuest.Location = New System.Drawing.Point(14, 69)
         Me.btnGuest.Name = "btnGuest"
         Me.btnGuest.Size = New System.Drawing.Size(92, 23)
-        Me.btnGuest.TabIndex = 16
+        Me.btnGuest.TabIndex = 22
         Me.btnGuest.Text = "Guest Login"
         Me.btnGuest.UseVisualStyleBackColor = True
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(71, 42)
+        Me.txtPassword.Location = New System.Drawing.Point(73, 43)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(121, 20)
-        Me.txtPassword.TabIndex = 15
+        Me.txtPassword.TabIndex = 21
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(71, 11)
+        Me.txtUsername.Location = New System.Drawing.Point(73, 12)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(121, 20)
-        Me.txtUsername.TabIndex = 14
+        Me.txtUsername.TabIndex = 20
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 45)
+        Me.Label2.Location = New System.Drawing.Point(11, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 13)
-        Me.Label2.TabIndex = 13
+        Me.Label2.TabIndex = 19
         Me.Label2.Text = "Password:"
         '
         'lblUsername
         '
         Me.lblUsername.AutoSize = True
-        Me.lblUsername.Location = New System.Drawing.Point(7, 14)
+        Me.lblUsername.Location = New System.Drawing.Point(9, 15)
         Me.lblUsername.Name = "lblUsername"
         Me.lblUsername.Size = New System.Drawing.Size(58, 13)
-        Me.lblUsername.TabIndex = 12
+        Me.lblUsername.TabIndex = 18
         Me.lblUsername.Text = "Username:"
         '
         'frmDonorLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(209, 113)
+        Me.ClientSize = New System.Drawing.Size(212, 106)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.btnGuest)
         Me.Controls.Add(Me.txtPassword)

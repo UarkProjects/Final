@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class OrganizationPortal
+Partial Class frmOrganizationPortal
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -33,17 +33,17 @@ Partial Class OrganizationPortal
         Me.Label1.Location = New System.Drawing.Point(288, 213)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(224, 25)
-        Me.Label1.TabIndex = 7
+        Me.Label1.TabIndex = 8
         Me.Label1.Text = "FORM IN PROGRESS"
         '
-        'OrganizationPortal
+        'frmOrganizationPortal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "OrganizationPortal"
-        Me.Text = "OrganizationPortal"
+        Me.Name = "frmOrganizationPortal"
+        Me.Text = "Organization Portal"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

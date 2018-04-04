@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Welcome
+Partial Class frmWelcome
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -90,7 +90,7 @@ Partial Class Welcome
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Periwinkle Electronic Access for Community Equality"
         '
-        'Welcome
+        'frmWelcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -101,8 +101,8 @@ Partial Class Welcome
         Me.Controls.Add(Me.radDonor)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Welcome"
-        Me.Text = "Welcome"
+        Me.Name = "frmWelcome"
+        Me.Text = "Welcome!"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
