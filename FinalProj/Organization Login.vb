@@ -2,6 +2,6 @@
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Me.Dispose()
         frmOrganizationPortal.Show()
-        'Make the Welcome Form go away here too
+        frmWelcome.Close()
     End Sub
 End Class

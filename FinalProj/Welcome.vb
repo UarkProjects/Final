@@ -13,6 +13,7 @@
 
     Private Sub btnGuest_Click(sender As Object, e As EventArgs) Handles btnGuest.Click
         frmMakeADiff.Show()
+        Me.Close()
     End Sub
 
     Private Sub btnNewAccount_Click(sender As Object, e As EventArgs) Handles btnNewAccount.Click
@@ -21,6 +22,5 @@
         ElseIf radOrganization.Checked = True Then
             frmNewOrganization.Show()
         End If
-
     End Sub
 End Class
