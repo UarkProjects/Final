@@ -1,9 +1,9 @@
 ﻿Public Class frmWelcome
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If radDonor.Checked = True Then
-            frmDonorLogin.Show()
+            frmDonorLogin.ShowDialog()
         ElseIf radOrganization.Checked = True Then
-            frmOrganizationLogin.Show()
+            frmOrganizationLogin.ShowDialog()
         End If
     End Sub
 
@@ -18,9 +18,9 @@
 
     Private Sub btnNewAccount_Click(sender As Object, e As EventArgs) Handles btnNewAccount.Click
         If radDonor.Checked = True Then
-            frmNewDonor.Show()
+            frmNewDonor.ShowDialog()
         ElseIf radOrganization.Checked = True Then
-            frmNewOrganization.Show()
+            frmNewOrganization.ShowDialog()
         End If
     End Sub
 End Class

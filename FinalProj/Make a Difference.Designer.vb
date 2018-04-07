@@ -33,19 +33,19 @@ Partial Class frmMakeADiff
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtZip = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.cmbState = New System.Windows.Forms.ComboBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabDonate = New System.Windows.Forms.TabPage()
-        Me.tabVolunteer = New System.Windows.Forms.TabPage()
         Me.dgvDonate = New System.Windows.Forms.DataGridView()
+        Me.tabVolunteer = New System.Windows.Forms.TabPage()
         Me.dgvVolunteer = New System.Windows.Forms.DataGridView()
         Me.btnContinue = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.tabDonate.SuspendLayout()
-        Me.tabVolunteer.SuspendLayout()
         CType(Me.dgvDonate, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabVolunteer.SuspendLayout()
         CType(Me.dgvVolunteer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -140,20 +140,21 @@ Partial Class frmMakeADiff
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 8
         '
-        'TextBox3
+        'txtSearch
         '
-        Me.TextBox3.Location = New System.Drawing.Point(220, 66)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(321, 20)
-        Me.TextBox3.TabIndex = 9
+        Me.txtSearch.Location = New System.Drawing.Point(220, 66)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(321, 20)
+        Me.txtSearch.TabIndex = 9
         '
-        'ComboBox1
+        'cmbState
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(488, 32)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(54, 21)
-        Me.ComboBox1.TabIndex = 10
+        Me.cmbState.FormattingEnabled = True
+        Me.cmbState.Items.AddRange(New Object() {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"})
+        Me.cmbState.Location = New System.Drawing.Point(488, 32)
+        Me.cmbState.Name = "cmbState"
+        Me.cmbState.Size = New System.Drawing.Size(54, 21)
+        Me.cmbState.TabIndex = 10
         '
         'TabControl1
         '
@@ -176,6 +177,15 @@ Partial Class frmMakeADiff
         Me.tabDonate.Text = "Donate"
         Me.tabDonate.UseVisualStyleBackColor = True
         '
+        'dgvDonate
+        '
+        Me.dgvDonate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDonate.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvDonate.Location = New System.Drawing.Point(3, 3)
+        Me.dgvDonate.Name = "dgvDonate"
+        Me.dgvDonate.Size = New System.Drawing.Size(515, 302)
+        Me.dgvDonate.TabIndex = 0
+        '
         'tabVolunteer
         '
         Me.tabVolunteer.Controls.Add(Me.dgvVolunteer)
@@ -186,15 +196,6 @@ Partial Class frmMakeADiff
         Me.tabVolunteer.TabIndex = 1
         Me.tabVolunteer.Text = "Volunteer"
         Me.tabVolunteer.UseVisualStyleBackColor = True
-        '
-        'dgvDonate
-        '
-        Me.dgvDonate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDonate.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvDonate.Location = New System.Drawing.Point(3, 3)
-        Me.dgvDonate.Name = "dgvDonate"
-        Me.dgvDonate.Size = New System.Drawing.Size(515, 302)
-        Me.dgvDonate.TabIndex = 0
         '
         'dgvVolunteer
         '
@@ -221,8 +222,8 @@ Partial Class frmMakeADiff
         Me.ClientSize = New System.Drawing.Size(555, 477)
         Me.Controls.Add(Me.btnContinue)
         Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.cmbState)
+        Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.txtZip)
         Me.Controls.Add(Me.Label4)
@@ -239,8 +240,8 @@ Partial Class frmMakeADiff
         Me.MenuStrip1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
         Me.tabDonate.ResumeLayout(False)
-        Me.tabVolunteer.ResumeLayout(False)
         CType(Me.dgvDonate, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabVolunteer.ResumeLayout(False)
         CType(Me.dgvVolunteer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -258,8 +259,8 @@ Partial Class frmMakeADiff
     Friend WithEvents Label4 As Label
     Friend WithEvents txtZip As TextBox
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtSearch As TextBox
+    Friend WithEvents cmbState As ComboBox
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents tabDonate As TabPage
     Friend WithEvents tabVolunteer As TabPage
