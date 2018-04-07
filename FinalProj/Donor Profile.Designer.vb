@@ -38,7 +38,7 @@ Partial Class frmDonorProfile
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(288, 213)
+        Me.Label1.Location = New System.Drawing.Point(58, 139)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(224, 25)
         Me.Label1.TabIndex = 9
@@ -112,7 +112,7 @@ Partial Class frmDonorProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(333, 200)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtEmail)
