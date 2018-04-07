@@ -35,7 +35,18 @@ Partial Class frmMakeADiff
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.tabDonate = New System.Windows.Forms.TabPage()
+        Me.tabVolunteer = New System.Windows.Forms.TabPage()
+        Me.dgvDonate = New System.Windows.Forms.DataGridView()
+        Me.dgvVolunteer = New System.Windows.Forms.DataGridView()
+        Me.btnContinue = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.tabDonate.SuspendLayout()
+        Me.tabVolunteer.SuspendLayout()
+        CType(Me.dgvDonate, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvVolunteer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -43,7 +54,7 @@ Partial Class frmMakeADiff
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem, Me.ReturnToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(555, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -82,7 +93,7 @@ Partial Class frmMakeADiff
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(161, 37)
+        Me.Label1.Location = New System.Drawing.Point(161, 36)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 3
@@ -91,7 +102,7 @@ Partial Class frmMakeADiff
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(326, 37)
+        Me.Label2.Location = New System.Drawing.Point(308, 36)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(27, 13)
         Me.Label2.TabIndex = 4
@@ -100,7 +111,7 @@ Partial Class frmMakeADiff
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(474, 35)
+        Me.Label3.Location = New System.Drawing.Point(447, 36)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 5
@@ -109,11 +120,11 @@ Partial Class frmMakeADiff
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(409, 288)
+        Me.Label4.Location = New System.Drawing.Point(161, 70)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Label4"
+        Me.Label4.Text = "Search:"
         '
         'txtZip
         '
@@ -124,31 +135,92 @@ Partial Class frmMakeADiff
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(359, 32)
+        Me.TextBox2.Location = New System.Drawing.Point(341, 32)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 8
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(500, 303)
+        Me.TextBox3.Location = New System.Drawing.Point(220, 66)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(321, 20)
         Me.TextBox3.TabIndex = 9
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(515, 34)
+        Me.ComboBox1.Location = New System.Drawing.Point(488, 32)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(73, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(54, 21)
         Me.ComboBox1.TabIndex = 10
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.tabDonate)
+        Me.TabControl1.Controls.Add(Me.tabVolunteer)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 104)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(529, 334)
+        Me.TabControl1.TabIndex = 11
+        '
+        'tabDonate
+        '
+        Me.tabDonate.Controls.Add(Me.dgvDonate)
+        Me.tabDonate.Location = New System.Drawing.Point(4, 22)
+        Me.tabDonate.Name = "tabDonate"
+        Me.tabDonate.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabDonate.Size = New System.Drawing.Size(521, 308)
+        Me.tabDonate.TabIndex = 0
+        Me.tabDonate.Text = "Donate"
+        Me.tabDonate.UseVisualStyleBackColor = True
+        '
+        'tabVolunteer
+        '
+        Me.tabVolunteer.Controls.Add(Me.dgvVolunteer)
+        Me.tabVolunteer.Location = New System.Drawing.Point(4, 22)
+        Me.tabVolunteer.Name = "tabVolunteer"
+        Me.tabVolunteer.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabVolunteer.Size = New System.Drawing.Size(521, 308)
+        Me.tabVolunteer.TabIndex = 1
+        Me.tabVolunteer.Text = "Volunteer"
+        Me.tabVolunteer.UseVisualStyleBackColor = True
+        '
+        'dgvDonate
+        '
+        Me.dgvDonate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDonate.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvDonate.Location = New System.Drawing.Point(3, 3)
+        Me.dgvDonate.Name = "dgvDonate"
+        Me.dgvDonate.Size = New System.Drawing.Size(515, 302)
+        Me.dgvDonate.TabIndex = 0
+        '
+        'dgvVolunteer
+        '
+        Me.dgvVolunteer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVolunteer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvVolunteer.Location = New System.Drawing.Point(3, 3)
+        Me.dgvVolunteer.Name = "dgvVolunteer"
+        Me.dgvVolunteer.Size = New System.Drawing.Size(515, 302)
+        Me.dgvVolunteer.TabIndex = 0
+        '
+        'btnContinue
+        '
+        Me.btnContinue.Location = New System.Drawing.Point(123, 444)
+        Me.btnContinue.Name = "btnContinue"
+        Me.btnContinue.Size = New System.Drawing.Size(318, 23)
+        Me.btnContinue.TabIndex = 12
+        Me.btnContinue.Text = "Continue"
+        Me.btnContinue.UseVisualStyleBackColor = True
         '
         'frmMakeADiff
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(555, 477)
+        Me.Controls.Add(Me.btnContinue)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
@@ -165,6 +237,11 @@ Partial Class frmMakeADiff
         Me.Text = "Make a Difference!"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.TabControl1.ResumeLayout(False)
+        Me.tabDonate.ResumeLayout(False)
+        Me.tabVolunteer.ResumeLayout(False)
+        CType(Me.dgvDonate, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvVolunteer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -183,4 +260,10 @@ Partial Class frmMakeADiff
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents tabDonate As TabPage
+    Friend WithEvents tabVolunteer As TabPage
+    Friend WithEvents dgvDonate As DataGridView
+    Friend WithEvents dgvVolunteer As DataGridView
+    Friend WithEvents btnContinue As Button
 End Class
