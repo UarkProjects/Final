@@ -10,17 +10,23 @@
     Private Sub radOrganization_CheckedChanged(sender As Object, e As EventArgs) Handles radOrganization.CheckedChanged
         btnGuest.Enabled = False
     End Sub
-
+    Private Sub radDonor_CheckedChanged(sender As Object, e As EventArgs) Handles radDonor.CheckedChanged
+        btnGuest.Enabled = True
+    End Sub
     Private Sub btnGuest_Click(sender As Object, e As EventArgs) Handles btnGuest.Click
         frmMakeADiff.Show()
         Me.Close()
     End Sub
-
     Private Sub btnNewAccount_Click(sender As Object, e As EventArgs) Handles btnNewAccount.Click
         If radDonor.Checked = True Then
             frmNewDonor.ShowDialog()
         ElseIf radOrganization.Checked = True Then
             frmNewOrganization.ShowDialog()
         End If
+    End Sub
+
+    Private Sub frmWelcome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
     End Sub
 End Class

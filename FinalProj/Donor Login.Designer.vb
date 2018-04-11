@@ -42,6 +42,7 @@ Partial Class frmDonorLogin
         '
         Me.txtPassword.Location = New System.Drawing.Point(73, 43)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtPassword.Size = New System.Drawing.Size(121, 20)
         Me.txtPassword.TabIndex = 21
         '
@@ -72,6 +73,7 @@ Partial Class frmDonorLogin
         '
         'frmDonorLogin
         '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(212, 106)
@@ -81,6 +83,7 @@ Partial Class frmDonorLogin
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblUsername)
         Me.Name = "frmDonorLogin"
+        Me.ShowIcon = False
         Me.Text = "Donor Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

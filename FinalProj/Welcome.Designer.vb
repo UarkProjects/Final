@@ -36,7 +36,7 @@ Partial Class frmWelcome
         Me.btnLogin.Location = New System.Drawing.Point(194, 105)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(154, 23)
-        Me.btnLogin.TabIndex = 11
+        Me.btnLogin.TabIndex = 0
         Me.btnLogin.Text = "Log In"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
@@ -45,7 +45,7 @@ Partial Class frmWelcome
         Me.btnNewAccount.Location = New System.Drawing.Point(374, 105)
         Me.btnNewAccount.Name = "btnNewAccount"
         Me.btnNewAccount.Size = New System.Drawing.Size(154, 23)
-        Me.btnNewAccount.TabIndex = 10
+        Me.btnNewAccount.TabIndex = 4
         Me.btnNewAccount.Text = "Create New Account"
         Me.btnNewAccount.UseVisualStyleBackColor = True
         '
@@ -55,7 +55,7 @@ Partial Class frmWelcome
         Me.radOrganization.Location = New System.Drawing.Point(273, 73)
         Me.radOrganization.Name = "radOrganization"
         Me.radOrganization.Size = New System.Drawing.Size(84, 17)
-        Me.radOrganization.TabIndex = 9
+        Me.radOrganization.TabIndex = 2
         Me.radOrganization.TabStop = True
         Me.radOrganization.Text = "Organization"
         Me.radOrganization.UseVisualStyleBackColor = True
@@ -66,7 +66,7 @@ Partial Class frmWelcome
         Me.radDonor.Location = New System.Drawing.Point(184, 73)
         Me.radDonor.Name = "radDonor"
         Me.radDonor.Size = New System.Drawing.Size(54, 17)
-        Me.radDonor.TabIndex = 8
+        Me.radDonor.TabIndex = 1
         Me.radDonor.TabStop = True
         Me.radDonor.Text = "Donor"
         Me.radDonor.UseVisualStyleBackColor = True
@@ -78,7 +78,7 @@ Partial Class frmWelcome
         Me.Label2.Location = New System.Drawing.Point(86, 34)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(338, 25)
-        Me.Label2.TabIndex = 7
+        Me.Label2.TabIndex = 1
         Me.Label2.Text = "P    •    E    •    A    •    C    •    E"
         '
         'Label1
@@ -88,7 +88,7 @@ Partial Class frmWelcome
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(501, 25)
-        Me.Label1.TabIndex = 6
+        Me.Label1.TabIndex = 0
         Me.Label1.Text = "Periwinkle Electronic Access for Community Equality"
         '
         'btnGuest
@@ -96,12 +96,13 @@ Partial Class frmWelcome
         Me.btnGuest.Location = New System.Drawing.Point(12, 105)
         Me.btnGuest.Name = "btnGuest"
         Me.btnGuest.Size = New System.Drawing.Size(154, 23)
-        Me.btnGuest.TabIndex = 23
+        Me.btnGuest.TabIndex = 3
         Me.btnGuest.Text = "Continue as Guest"
         Me.btnGuest.UseVisualStyleBackColor = True
         '
         'frmWelcome
         '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(540, 140)

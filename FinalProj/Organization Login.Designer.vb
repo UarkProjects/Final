@@ -31,7 +31,7 @@ Partial Class frmOrganizationLogin
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(17, 63)
+        Me.btnLogin.Location = New System.Drawing.Point(14, 69)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(180, 23)
         Me.btnLogin.TabIndex = 14
@@ -40,14 +40,15 @@ Partial Class frmOrganizationLogin
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(76, 37)
+        Me.txtPassword.Location = New System.Drawing.Point(73, 43)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtPassword.Size = New System.Drawing.Size(121, 20)
         Me.txtPassword.TabIndex = 13
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(76, 6)
+        Me.txtUsername.Location = New System.Drawing.Point(73, 12)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(121, 20)
         Me.txtUsername.TabIndex = 12
@@ -55,7 +56,7 @@ Partial Class frmOrganizationLogin
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(14, 40)
+        Me.Label2.Location = New System.Drawing.Point(11, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 13)
         Me.Label2.TabIndex = 11
@@ -64,7 +65,7 @@ Partial Class frmOrganizationLogin
         'lblUsername
         '
         Me.lblUsername.AutoSize = True
-        Me.lblUsername.Location = New System.Drawing.Point(12, 9)
+        Me.lblUsername.Location = New System.Drawing.Point(9, 15)
         Me.lblUsername.Name = "lblUsername"
         Me.lblUsername.Size = New System.Drawing.Size(58, 13)
         Me.lblUsername.TabIndex = 10
@@ -72,15 +73,17 @@ Partial Class frmOrganizationLogin
         '
         'frmOrganizationLogin
         '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(214, 96)
+        Me.ClientSize = New System.Drawing.Size(212, 106)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblUsername)
         Me.Name = "frmOrganizationLogin"
+        Me.ShowIcon = False
         Me.Text = "Organization Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -21,6 +21,5 @@ Public Class frmOrganizationLogin
             Me.Close()
 
         End If
-
     End Sub
 End Class
