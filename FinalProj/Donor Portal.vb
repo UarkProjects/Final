@@ -1,13 +1,15 @@
 ﻿Public Class frmDonorPortal
     Protected db As New db
     Protected DonID As Integer
-    Public Sub New(ByVal dID As Integer)
+    Protected finame As String
+    Public Sub New(ByVal dID As Integer, ByVal fname As String)
 
         ' This call is required by the designer.
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        dID = DonID
+        DonID = dID
+        finame = fname
     End Sub
     Private Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem.Click
         frmWelcome.Show()
@@ -15,7 +17,9 @@
     End Sub
 
     Private Sub btnDonationHistory_Click(sender As Object, e As EventArgs) Handles btnDonationHistory.Click
-        frmDonationHistory.ShowDialog()
+        Dim donateHist As New frmDonationHistory(DonID)
+        donateHist.ShowDialog()
+
     End Sub
 
     Private Sub btnServiceHistory_Click(sender As Object, e As EventArgs) Handles btnServiceHistory.Click
@@ -30,5 +34,8 @@
         frmDonorProfile.ShowDialog()
     End Sub
 
+    Private Sub frmDonorPortal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblGreeting.Text = "Welcome, " & finame
 
+    End Sub
 End Class
