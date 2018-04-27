@@ -15,7 +15,7 @@ Public Class frmDonorLogin
             Dim Donorid = (table.Rows(0).Item(2))
             Dim donorname = (table.Rows(0).Item(3))
             Dim donorport As New frmDonorPortal(Donorid, donorname)
-            MsgBox(Donorid)
+
             Me.Dispose()
             donorport.Show()
             frmWelcome.Close()

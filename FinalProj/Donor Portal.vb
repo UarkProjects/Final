@@ -23,7 +23,9 @@
     End Sub
 
     Private Sub btnServiceHistory_Click(sender As Object, e As EventArgs) Handles btnServiceHistory.Click
-        frmServiceHistory.ShowDialog()
+        Dim servHist As New frmServiceHistory(DonID)
+        servHist.ShowDialog()
+
     End Sub
 
     Private Sub btnMakeADifference_Click(sender As Object, e As EventArgs) Handles btnMakeADifference.Click
