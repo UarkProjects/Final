@@ -1,7 +1,9 @@
-﻿Public Class frmDonorPortal
+﻿Imports System.Data.SqlClient
+Public Class frmDonorPortal
     Protected db As New db
     Protected DonID As Integer
     Protected finame As String
+
     Public Sub New(ByVal dID As Integer, ByVal fname As String)
 
         ' This call is required by the designer.
@@ -11,6 +13,9 @@
         DonID = dID
         finame = fname
     End Sub
+    Public Function getVariableValue(ByVal column As String)
+        Return column
+    End Function
     Private Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem.Click
         frmWelcome.Show()
         Me.Dispose()
@@ -33,11 +38,12 @@
     End Sub
 
     Private Sub DonorProfileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DonorProfileToolStripMenuItem.Click
-        frmDonorProfile.ShowDialog()
+        Dim portal As New frmDonorProfile(DonID)
+        portal.ShowDialog()
+
     End Sub
 
     Private Sub frmDonorPortal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblGreeting.Text = "Welcome, " & finame
-
     End Sub
 End Class
