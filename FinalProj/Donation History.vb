@@ -42,7 +42,7 @@ Public Class frmDonationHistory
             lblName.Text = Firstname & " " & lastname
             lblTotalDonations.Text = "Total Donations $" & totalamt
         End If
-        db.sql = "SELECT o.OrgName, da.Amount, da.date  FROM Donation_ASC da join OrganizationHeader o on da.OrgID = o.OrganizationID WHERE da.DonorID = @id AND da.amount is not null ORDER BY DATE DESC"
+        db.sql = "SELECT o.OrgName, da.Amount, da.Date  FROM Donation_ASC da join OrganizationHeader o on da.OrgID = o.OrganizationID WHERE da.DonorID = @id AND da.amount is not null ORDER BY DATE DESC"
         db.bind("@id", donID)
         db.fill(DataGridView1)
     End Sub

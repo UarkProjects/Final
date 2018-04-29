@@ -41,6 +41,7 @@ Partial Class frmMakeADiff
         Me.tabVolunteer = New System.Windows.Forms.TabPage()
         Me.dgvVolunteer = New System.Windows.Forms.DataGridView()
         Me.btnContinue = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.tabDonate.SuspendLayout()
@@ -144,7 +145,7 @@ Partial Class frmMakeADiff
         '
         Me.txtSearch.Location = New System.Drawing.Point(220, 66)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(321, 20)
+        Me.txtSearch.Size = New System.Drawing.Size(183, 20)
         Me.txtSearch.TabIndex = 9
         '
         'cmbState
@@ -215,11 +216,21 @@ Partial Class frmMakeADiff
         Me.btnContinue.Text = "Continue"
         Me.btnContinue.UseVisualStyleBackColor = True
         '
+        'btnSearch
+        '
+        Me.btnSearch.Location = New System.Drawing.Point(409, 66)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(133, 20)
+        Me.btnSearch.TabIndex = 13
+        Me.btnSearch.Text = "Search"
+        Me.btnSearch.UseVisualStyleBackColor = True
+        '
         'frmMakeADiff
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(555, 477)
+        Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnContinue)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.cmbState)
@@ -267,4 +278,5 @@ Partial Class frmMakeADiff
     Friend WithEvents dgvDonate As DataGridView
     Friend WithEvents dgvVolunteer As DataGridView
     Friend WithEvents btnContinue As Button
+    Friend WithEvents btnSearch As Button
 End Class

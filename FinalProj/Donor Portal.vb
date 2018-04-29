@@ -34,7 +34,9 @@ Public Class frmDonorPortal
     End Sub
 
     Private Sub btnMakeADifference_Click(sender As Object, e As EventArgs) Handles btnMakeADifference.Click
-        frmMakeADiff.ShowDialog()
+        Dim make As New frmMakeADiff(DonID)
+        make.ShowDialog()
+
     End Sub
 
     Private Sub DonorProfileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DonorProfileToolStripMenuItem.Click
@@ -45,5 +47,11 @@ Public Class frmDonorPortal
 
     Private Sub frmDonorPortal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblGreeting.Text = "Welcome, " & finame
+    End Sub
+
+    Private Sub AddPaymentCardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddPaymentCardToolStripMenuItem.Click
+        Dim cards As New frmCardEntry(DonID)
+        cards.ShowDialog()
+
     End Sub
 End Class

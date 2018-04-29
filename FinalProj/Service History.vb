@@ -46,7 +46,7 @@ Public Class frmServiceHistory
             lblCurrentYearDonations.Text = year & " Hours Volunteered: " & donorhrsyear
             'lblCurrentYearDonations.Text = "This is the current year total" & donorhrsyear
         End If
-        db.sql = "SELECT oh.OrgName, e.EventName, HrsVol FROM Donation_ASC da join OrganizationHeader oh on da.OrgID = oh.OrganizationID join Events e on da.EventID = e.EventID WHERE HrsVol is not null AND da.DonorID = @id"
+        db.sql = "SELECT oh.OrgName, e.EventName, HrsVol as HoursVolunteered FROM Donation_ASC da join OrganizationHeader oh on da.OrgID = oh.OrganizationID join Events e on da.EventID = e.EventID WHERE HrsVol is not null AND da.DonorID = @id"
         db.bind("@id", donID)
         db.fill(DataGridView1)
     End Sub

@@ -14,7 +14,9 @@
         btnGuest.Enabled = True
     End Sub
     Private Sub btnGuest_Click(sender As Object, e As EventArgs) Handles btnGuest.Click
-        frmMakeADiff.Show()
+        Dim make As New frmMakeADiff(0)
+        make.ShowDialog()
+
         Me.Close()
     End Sub
     Private Sub btnNewAccount_Click(sender As Object, e As EventArgs) Handles btnNewAccount.Click

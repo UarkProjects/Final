@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Card Entry.Designer.vb">
+      <DependentUpon>Card Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Card Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="db.vb" />
     <Compile Include="Donation History.Designer.vb">
       <DependentUpon>Donation History.vb</DependentUpon>
@@ -156,6 +162,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Card Entry.resx">
+      <DependentUpon>Card Entry.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Donation History.resx">
       <DependentUpon>Donation History.vb</DependentUpon>
     </EmbeddedResource>

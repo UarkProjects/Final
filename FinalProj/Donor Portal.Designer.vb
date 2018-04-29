@@ -29,6 +29,7 @@ Partial Class frmDonorPortal
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DonorProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddPaymentCardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -74,7 +75,7 @@ Partial Class frmDonorPortal
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogOutToolStripMenuItem, Me.DonorProfileToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogOutToolStripMenuItem, Me.DonorProfileToolStripMenuItem, Me.AddPaymentCardToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(332, 24)
@@ -92,6 +93,12 @@ Partial Class frmDonorPortal
         Me.DonorProfileToolStripMenuItem.Name = "DonorProfileToolStripMenuItem"
         Me.DonorProfileToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
         Me.DonorProfileToolStripMenuItem.Text = "Donor Profile"
+        '
+        'AddPaymentCardToolStripMenuItem
+        '
+        Me.AddPaymentCardToolStripMenuItem.Name = "AddPaymentCardToolStripMenuItem"
+        Me.AddPaymentCardToolStripMenuItem.Size = New System.Drawing.Size(119, 20)
+        Me.AddPaymentCardToolStripMenuItem.Text = "Add Payment Card"
         '
         'frmDonorPortal
         '
@@ -119,4 +126,5 @@ Partial Class frmDonorPortal
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents LogOutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DonorProfileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AddPaymentCardToolStripMenuItem As ToolStripMenuItem
 End Class
