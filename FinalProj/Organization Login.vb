@@ -22,4 +22,8 @@ Public Class frmOrganizationLogin
 
         End If
     End Sub
+
+    Private Sub frmOrganizationLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

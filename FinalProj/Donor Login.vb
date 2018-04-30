@@ -23,4 +23,8 @@ Public Class frmDonorLogin
 
 
     End Sub
+
+    Private Sub frmDonorLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

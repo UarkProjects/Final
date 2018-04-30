@@ -103,6 +103,12 @@
     <Compile Include="Donor Profile.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmOrganizationProfile.Designer.vb">
+      <DependentUpon>frmOrganizationProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrganizationProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Learn More.Designer.vb">
       <DependentUpon>Learn More.vb</DependentUpon>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Donor Profile.resx">
       <DependentUpon>Donor Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrganizationProfile.resx">
+      <DependentUpon>frmOrganizationProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Learn More.resx">
       <DependentUpon>Learn More.vb</DependentUpon>
