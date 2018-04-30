@@ -4,6 +4,8 @@
             frmDonorLogin.ShowDialog()
         ElseIf radOrganization.Checked = True Then
             frmOrganizationLogin.ShowDialog()
+        Else
+            MsgBox("Please select either donor or organization")
         End If
     End Sub
 
@@ -24,6 +26,8 @@
             frmNewDonor.ShowDialog()
         ElseIf radOrganization.Checked = True Then
             frmNewOrganization.ShowDialog()
+        Else
+            MsgBox("Please select either donor or organization")
         End If
     End Sub
 
