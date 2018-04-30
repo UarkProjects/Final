@@ -45,4 +45,8 @@ Public Class frmOrganizationPortal
         portal.ShowDialog()
 
     End Sub
+
+    Private Sub btnNewServiceEvent_Click(sender As Object, e As EventArgs) Handles btnNewServiceEvent.Click
+
+    End Sub
 End Class

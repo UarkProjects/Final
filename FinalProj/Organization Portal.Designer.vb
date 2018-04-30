@@ -38,7 +38,7 @@ Partial Class frmOrganizationPortal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogoffToolStripMenuItem, Me.OrganizationProfileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(355, 24)
         Me.MenuStrip1.TabIndex = 9
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -56,7 +56,7 @@ Partial Class frmOrganizationPortal
         '
         'btnScheduledServiceEvents
         '
-        Me.btnScheduledServiceEvents.Location = New System.Drawing.Point(225, 182)
+        Me.btnScheduledServiceEvents.Location = New System.Drawing.Point(10, 64)
         Me.btnScheduledServiceEvents.Name = "btnScheduledServiceEvents"
         Me.btnScheduledServiceEvents.Size = New System.Drawing.Size(141, 23)
         Me.btnScheduledServiceEvents.TabIndex = 10
@@ -65,7 +65,7 @@ Partial Class frmOrganizationPortal
         '
         'btnNewServiceEvent
         '
-        Me.btnNewServiceEvent.Location = New System.Drawing.Point(401, 182)
+        Me.btnNewServiceEvent.Location = New System.Drawing.Point(186, 64)
         Me.btnNewServiceEvent.Name = "btnNewServiceEvent"
         Me.btnNewServiceEvent.Size = New System.Drawing.Size(113, 23)
         Me.btnNewServiceEvent.TabIndex = 11
@@ -74,7 +74,7 @@ Partial Class frmOrganizationPortal
         '
         'btnDonorRecords
         '
-        Me.btnDonorRecords.Location = New System.Drawing.Point(263, 211)
+        Me.btnDonorRecords.Location = New System.Drawing.Point(48, 93)
         Me.btnDonorRecords.Name = "btnDonorRecords"
         Me.btnDonorRecords.Size = New System.Drawing.Size(103, 23)
         Me.btnDonorRecords.TabIndex = 12
@@ -83,7 +83,7 @@ Partial Class frmOrganizationPortal
         '
         'btnVolunteerRecords
         '
-        Me.btnVolunteerRecords.Location = New System.Drawing.Point(401, 211)
+        Me.btnVolunteerRecords.Location = New System.Drawing.Point(186, 93)
         Me.btnVolunteerRecords.Name = "btnVolunteerRecords"
         Me.btnVolunteerRecords.Size = New System.Drawing.Size(113, 23)
         Me.btnVolunteerRecords.TabIndex = 13
@@ -93,9 +93,10 @@ Partial Class frmOrganizationPortal
         'lblOrgName
         '
         Me.lblOrgName.AutoSize = True
-        Me.lblOrgName.Location = New System.Drawing.Point(102, 95)
+        Me.lblOrgName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrgName.Location = New System.Drawing.Point(12, 35)
         Me.lblOrgName.Name = "lblOrgName"
-        Me.lblOrgName.Size = New System.Drawing.Size(55, 13)
+        Me.lblOrgName.Size = New System.Drawing.Size(98, 24)
         Me.lblOrgName.TabIndex = 14
         Me.lblOrgName.Text = "Org Name"
         '
@@ -103,7 +104,7 @@ Partial Class frmOrganizationPortal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(355, 165)
         Me.Controls.Add(Me.lblOrgName)
         Me.Controls.Add(Me.btnVolunteerRecords)
         Me.Controls.Add(Me.btnDonorRecords)
