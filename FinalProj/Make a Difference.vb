@@ -11,47 +11,36 @@
         ' Add any initialization after the InitializeComponent() call.
         dID = id
     End Sub
-    Private Sub loadDonations()
-        db.sql = "SELECT da.amount, oh.OrgName, da.Date FROM Donation_ASC da join OrganizationHeader oh on da.OrgID = oh.OrganizationID WHERE amount is not null AND DonorID = @id"
-        db.bind("@id", dID)
+
+    Private Sub loadAllOrgs()
+        db.sql = "SELECT OrgName, MainCause, FoundationDate, website, OrganizationID FROM OrganizationHeader"
         db.fill(dgvDonate)
+
     End Sub
-    Private Sub loadVolunteer()
-        db.sql = "select HrsVol, e.EventName, da.date from Donation_ASC da join OrganizationHeader oh on da.OrgID = oh.OrganizationID JOIN Events e on e.EventID = da.EventID where HrsVol is not null AND da.DonorID = @id"
-        db.bind("@id", dID)
+    Private Sub loadEvents()
+        db.sql = "SELECT oh.OrgName, e.EventName, e.Address, e.City, e.State, e.Zipcode FROM EVENTS e join OrganizationHeader oh on e.OrgID = oh.OrganizationID"
         db.fill(dgvVolunteer)
+
     End Sub
     Private Sub frmMakeADiff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If dID > 0 Then
-            loadDonations()
-            loadVolunteer()
-        End If
-
-
-
+        loadAllOrgs()
+        loadEvents()
     End Sub
 
     Private Sub ReturnToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReturnToolStripMenuItem.Click
         Me.Close()
-        
+
     End Sub
 
-    Private Sub chkLocal_CheckedChanged(sender As Object, e As EventArgs) Handles chkLocal.CheckedChanged
-        If chkLocal.Checked = True Then
-            localcheck = 1
-        End If
-        If chkLocal.Checked = False Then
-            localcheck = 0
-        End If
-    End Sub
+    Private Sub btnDonate_Click(sender As Object, e As EventArgs) Handles btnDonate.Click
+        Dim learn As New frmLearnMore(getOrgID(), getOrgValue("Website"))
+        learn.ShowDialog()
 
-    Private Sub chkNationwide_CheckedChanged(sender As Object, e As EventArgs) Handles chkNationwide.CheckedChanged
-        If chkNationwide.Checked = True Then
-            onYourSide = 1
-        End If
-        If chkNationwide.Checked = False Then
-            onYourSide = 0
-
-        End If
     End Sub
+    Public Function getOrgID() As Integer
+        Return getOrgValue("OrganizationID")
+    End Function
+    Public Function getOrgValue(ByVal column As String)
+        Return dgvDonate.Item(column, dgvDonate.CurrentRow.Index).Value
+    End Function
 End Class

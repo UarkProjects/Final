@@ -25,23 +25,13 @@ Partial Class frmMakeADiff
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReturnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.chkLocal = New System.Windows.Forms.CheckBox()
-        Me.chkNationwide = New System.Windows.Forms.CheckBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtZip = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.txtSearch = New System.Windows.Forms.TextBox()
-        Me.cmbState = New System.Windows.Forms.ComboBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabDonate = New System.Windows.Forms.TabPage()
         Me.dgvDonate = New System.Windows.Forms.DataGridView()
         Me.tabVolunteer = New System.Windows.Forms.TabPage()
         Me.dgvVolunteer = New System.Windows.Forms.DataGridView()
-        Me.btnContinue = New System.Windows.Forms.Button()
-        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.btnDonate = New System.Windows.Forms.Button()
+        Me.btnVolunteer = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.tabDonate.SuspendLayout()
@@ -55,7 +45,7 @@ Partial Class frmMakeADiff
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem, Me.ReturnToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(555, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(545, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -71,97 +61,11 @@ Partial Class frmMakeADiff
         Me.ReturnToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
         Me.ReturnToolStripMenuItem.Text = "Return"
         '
-        'chkLocal
-        '
-        Me.chkLocal.AutoSize = True
-        Me.chkLocal.Location = New System.Drawing.Point(12, 36)
-        Me.chkLocal.Name = "chkLocal"
-        Me.chkLocal.Size = New System.Drawing.Size(119, 17)
-        Me.chkLocal.TabIndex = 1
-        Me.chkLocal.Text = "Local Organizations"
-        Me.chkLocal.UseVisualStyleBackColor = True
-        '
-        'chkNationwide
-        '
-        Me.chkNationwide.AutoSize = True
-        Me.chkNationwide.Location = New System.Drawing.Point(12, 69)
-        Me.chkNationwide.Name = "chkNationwide"
-        Me.chkNationwide.Size = New System.Drawing.Size(79, 17)
-        Me.chkNationwide.TabIndex = 2
-        Me.chkNationwide.Text = "Nationwide"
-        Me.chkNationwide.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(161, 36)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 13)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Zip Code:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(308, 36)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(27, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "City:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(447, 36)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(35, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "State:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(161, 70)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Search:"
-        '
-        'txtZip
-        '
-        Me.txtZip.Location = New System.Drawing.Point(220, 32)
-        Me.txtZip.Name = "txtZip"
-        Me.txtZip.Size = New System.Drawing.Size(82, 20)
-        Me.txtZip.TabIndex = 7
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(341, 32)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 8
-        '
-        'txtSearch
-        '
-        Me.txtSearch.Location = New System.Drawing.Point(220, 66)
-        Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(183, 20)
-        Me.txtSearch.TabIndex = 9
-        '
-        'cmbState
-        '
-        Me.cmbState.FormattingEnabled = True
-        Me.cmbState.Items.AddRange(New Object() {"AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"})
-        Me.cmbState.Location = New System.Drawing.Point(488, 32)
-        Me.cmbState.Name = "cmbState"
-        Me.cmbState.Size = New System.Drawing.Size(54, 21)
-        Me.cmbState.TabIndex = 10
-        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.tabDonate)
         Me.TabControl1.Controls.Add(Me.tabVolunteer)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 104)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 27)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(529, 334)
@@ -207,42 +111,32 @@ Partial Class frmMakeADiff
         Me.dgvVolunteer.Size = New System.Drawing.Size(515, 302)
         Me.dgvVolunteer.TabIndex = 0
         '
-        'btnContinue
+        'btnDonate
         '
-        Me.btnContinue.Location = New System.Drawing.Point(123, 444)
-        Me.btnContinue.Name = "btnContinue"
-        Me.btnContinue.Size = New System.Drawing.Size(318, 23)
-        Me.btnContinue.TabIndex = 12
-        Me.btnContinue.Text = "Continue"
-        Me.btnContinue.UseVisualStyleBackColor = True
+        Me.btnDonate.Location = New System.Drawing.Point(57, 367)
+        Me.btnDonate.Name = "btnDonate"
+        Me.btnDonate.Size = New System.Drawing.Size(188, 23)
+        Me.btnDonate.TabIndex = 12
+        Me.btnDonate.Text = "Donate"
+        Me.btnDonate.UseVisualStyleBackColor = True
         '
-        'btnSearch
+        'btnVolunteer
         '
-        Me.btnSearch.Location = New System.Drawing.Point(409, 66)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(133, 20)
-        Me.btnSearch.TabIndex = 13
-        Me.btnSearch.Text = "Search"
-        Me.btnSearch.UseVisualStyleBackColor = True
+        Me.btnVolunteer.Location = New System.Drawing.Point(285, 367)
+        Me.btnVolunteer.Name = "btnVolunteer"
+        Me.btnVolunteer.Size = New System.Drawing.Size(188, 23)
+        Me.btnVolunteer.TabIndex = 13
+        Me.btnVolunteer.Text = "Volunteer"
+        Me.btnVolunteer.UseVisualStyleBackColor = True
         '
         'frmMakeADiff
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(555, 477)
-        Me.Controls.Add(Me.btnSearch)
-        Me.Controls.Add(Me.btnContinue)
+        Me.ClientSize = New System.Drawing.Size(545, 397)
+        Me.Controls.Add(Me.btnVolunteer)
+        Me.Controls.Add(Me.btnDonate)
         Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.cmbState)
-        Me.Controls.Add(Me.txtSearch)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.txtZip)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.chkNationwide)
-        Me.Controls.Add(Me.chkLocal)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMakeADiff"
@@ -262,21 +156,11 @@ Partial Class frmMakeADiff
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReturnToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents chkLocal As CheckBox
-    Friend WithEvents chkNationwide As CheckBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents txtZip As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents txtSearch As TextBox
-    Friend WithEvents cmbState As ComboBox
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents tabDonate As TabPage
     Friend WithEvents tabVolunteer As TabPage
     Friend WithEvents dgvDonate As DataGridView
     Friend WithEvents dgvVolunteer As DataGridView
-    Friend WithEvents btnContinue As Button
-    Friend WithEvents btnSearch As Button
+    Friend WithEvents btnDonate As Button
+    Friend WithEvents btnVolunteer As Button
 End Class
