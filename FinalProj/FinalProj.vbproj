@@ -115,6 +115,12 @@
     <Compile Include="Make a Difference.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Make Payment.Designer.vb">
+      <DependentUpon>Make Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Make Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -160,6 +166,18 @@
     <Compile Include="Service History.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Unregistered Donor Card Entry.Designer.vb">
+      <DependentUpon>Unregistered Donor Card Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Unregistered Donor Card Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteer Learn.Designer.vb">
+      <DependentUpon>Volunteer Learn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer Learn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Welcome.Designer.vb">
       <DependentUpon>Welcome.vb</DependentUpon>
     </Compile>
@@ -189,6 +207,9 @@
     <EmbeddedResource Include="Make a Difference.resx">
       <DependentUpon>Make a Difference.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Make Payment.resx">
+      <DependentUpon>Make Payment.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -209,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Service History.resx">
       <DependentUpon>Service History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unregistered Donor Card Entry.resx">
+      <DependentUpon>Unregistered Donor Card Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volunteer Learn.resx">
+      <DependentUpon>Volunteer Learn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.vb</DependentUpon>
