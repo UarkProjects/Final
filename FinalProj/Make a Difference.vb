@@ -18,7 +18,7 @@
 
     End Sub
     Private Sub loadEvents()
-        db.sql = "SELECT oh.OrgName, e.EventName, e.Address, e.City, e.State, e.Zipcode, e.EventID FROM EVENTS e join OrganizationHeader oh on e.OrgID = oh.OrganizationID"
+        db.sql = "SELECT oh.OrgName, e.EventName, e.Address, e.City, e.State, e.Zipcode, e.EventID, e.website as Site FROM EVENTS e join OrganizationHeader oh on e.OrgID = oh.OrganizationID"
         db.fill(dgvVolunteer)
 
     End Sub

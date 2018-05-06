@@ -25,6 +25,7 @@ Partial Class frmVolLearn
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VolunteerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GoBackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,11 +50,21 @@ Partial Class frmVolLearn
         Me.GoBackToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.GoBackToolStripMenuItem.Text = "Go Back"
         '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, 24)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(800, 426)
+        Me.WebBrowser1.TabIndex = 1
+        '
         'frmVolLearn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmVolLearn"
@@ -68,4 +79,5 @@ Partial Class frmVolLearn
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents VolunteerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GoBackToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WebBrowser1 As WebBrowser
 End Class
